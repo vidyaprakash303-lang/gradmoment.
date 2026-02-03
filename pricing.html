@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Pricing — Grand Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <audio id="ambientAudio" src="assets/audio/serene-glass-landing.mp3" loop preload="auto"></audio>
+
+  <header class="nav">
+    <div class="container nav__row">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Logo"/><div><div class="t1">GRAND MOMENT</div><div class="t2">Luxury Experiences • Haryana</div></div></a>
+      <nav class="nav__links">
+        <a href="venues.html">Venues</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a><a href="booking.html">Book</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--wa" href="https://wa.me/918708808087" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn btn--gold" href="booking.html">Reserve a Date</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 data-reveal style="font-family:'Cinzel',serif;">Pricing</h2>
+      <p data-reveal style="color:rgba(255,255,255,.70); margin-top:6px;">
+        These are premium package tiers. Exact pricing depends on date, decor quality, and guest count.
+      </p>
+
+      <div class="grid3" style="margin-top:12px;">
+        <div class="tile" data-reveal>
+          <h4>Silver</h4>
+          <p>Elegant decor • Standard lighting • venue basics</p>
+          <div style="margin-top:12px;">
+            <a class="btn" href="booking.html">Request Quote</a>
+          </div>
+        </div>
+
+        <div class="tile" data-reveal style="border-color:rgba(217,181,108,.35); background:rgba(217,181,108,.06);">
+          <h4>Gold</h4>
+          <p>Premium floral • enhanced lighting • curated photo spots</p>
+          <div style="margin-top:12px;">
+            <a class="btn btn--gold" href="booking.html">Most Popular</a>
+          </div>
+        </div>
+
+        <div class="tile" data-reveal>
+          <h4>Platinum</h4>
+          <p>Luxury theme decor • grand entry • stage + ambience upgrades</p>
+          <div style="margin-top:12px;">
+            <a class="btn" href="booking.html">Request Quote</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile" data-reveal style="margin-top:14px;">
+        <h4>Fast Quote on WhatsApp</h4>
+        <p>Send event type + date + guests — we will reply with best plan.</p>
+        <a class="btn btn--wa" href="https://wa.me/918708808087?text=Hi%20Grand%20Moment%2C%20please%20share%20pricing%20for%20my%20event.%20Event%20type%3A%20____%20Date%3A%20____%20Guests%3A%20____"
+           target="_blank" rel="noreferrer">Get Pricing on WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Grand Moment — Haryana</div></footer>
+  <div class="audioDock"><button id="audioToggle">Play Sound</button><div class="hint" id="audioHint">Tap to enable (browser policy)</div></div>
+
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script src="js/app.js"></script>
+</body>
+</html>

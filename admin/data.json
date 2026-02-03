@@ -1,0 +1,37 @@
+{
+  "brand": {
+    "name": "Grand Moment",
+    "tagline": "Luxury Experiences \u2022 Haryana",
+    "phone": "+91 8708808087",
+    "whatsapp": "918708808087",
+    "location": "Haryana, India"
+  },
+  "hero": {
+    "headline": "Make Every Event a Grand Moment.",
+    "taglines": [
+      "Where love becomes a celebration.",
+      "Your story. Our stage. A Grand Moment.",
+      "Luxury weddings, timeless memories.",
+      "Celebrate relationships with royal ambience."
+    ]
+  },
+  "services": [
+    "Wedding Ceremonies",
+    "Receptions & Parties",
+    "Birthday Celebrations",
+    "Corporate Events",
+    "Custom Theme D\u00e9cor",
+    "Luxury Lighting & Sound"
+  ],
+  "pricing": {
+    "silver": "Elegant decor \u2022 Standard lighting",
+    "gold": "Premium floral \u2022 Enhanced lighting",
+    "platinum": "Luxury themes \u2022 Grand entry"
+  },
+  "gallery": [
+    "wedding-1.png",
+    "wedding-2.png",
+    "wedding-3.png",
+    "wedding-4.png"
+  ]
+}

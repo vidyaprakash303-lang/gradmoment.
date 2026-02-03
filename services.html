@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Services — Grand Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <audio id="ambientAudio" src="assets/audio/serene-glass-landing.mp3" loop preload="auto"></audio>
+
+  <header class="nav">
+    <div class="container nav__row">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Logo"/><div><div class="t1">GRAND MOMENT</div><div class="t2">Luxury Experiences • Haryana</div></div></a>
+      <nav class="nav__links">
+        <a href="venues.html">Venues</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a><a href="booking.html">Book</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--wa" href="https://wa.me/918708808087" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn btn--gold" href="booking.html">Reserve a Date</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 data-reveal style="font-family:'Cinzel',serif;">Services</h2>
+
+      <div class="grid3">
+        <div class="tile" data-reveal><h4>Theme Décor</h4><p>Floral + fabric concepts • royal stage • entry gate • premium lighting.</p></div>
+        <div class="tile" data-reveal><h4>Sound & Lights</h4><p>DJ setups • stage lighting • dance floor • cinematic ambience.</p></div>
+        <div class="tile" data-reveal><h4>Catering Planning</h4><p>Buffet counters • live stations • premium serving flow.</p></div>
+        <div class="tile" data-reveal><h4>Photography Spots</h4><p>Curated backdrops • floral arches • premium couple frames.</p></div>
+        <div class="tile" data-reveal><h4>Guest Management</h4><p>Seating plans • VIP lounge • smooth entry coordination.</p></div>
+        <div class="tile" data-reveal><h4>Custom Packages</h4><p>Based on guest count, decor level, and your event type.</p></div>
+      </div>
+
+      <div style="margin-top:14px;">
+        <a class="btn btn--gold" href="booking.html">Request a Quote</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Grand Moment — Haryana</div></footer>
+  <div class="audioDock"><button id="audioToggle">Play Sound</button><div class="hint" id="audioHint">Tap to enable (browser policy)</div></div>
+
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script src="js/app.js"></script>
+</body>
+</html>

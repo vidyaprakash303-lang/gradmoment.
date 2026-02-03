@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Contact — Grand Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <audio id="ambientAudio" src="assets/audio/serene-glass-landing.mp3" loop preload="auto"></audio>
+
+  <header class="nav">
+    <div class="container nav__row">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Logo"/><div><div class="t1">GRAND MOMENT</div><div class="t2">Luxury Experiences • Haryana</div></div></a>
+      <nav class="nav__links">
+        <a href="venues.html">Venues</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a><a href="booking.html">Book</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--wa" href="https://wa.me/918708808087" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn btn--gold" href="booking.html">Reserve a Date</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 data-reveal style="font-family:'Cinzel',serif;">Contact</h2>
+
+      <div class="grid3">
+        <div class="tile" data-reveal>
+          <h4>Phone / WhatsApp</h4>
+          <p style="margin-top:6px;">
+            <b>+91 8708808087</b><br/>
+            <span style="color:rgba(255,255,255,.7)">Fast response on WhatsApp</span>
+          </p>
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <a class="btn btn--wa" href="https://wa.me/918708808087" target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+            <a class="btn" href="tel:+918708808087">Call Now</a>
+          </div>
+        </div>
+
+        <div class="tile" data-reveal>
+          <h4>Location</h4>
+          <p style="margin-top:6px;">
+            <b>Haryana</b><br/>
+            <span style="color:rgba(255,255,255,.7)">
+              (Send full address, I’ll add Google Map)
+            </span>
+          </p>
+          <div style="margin-top:12px;">
+            <a class="btn" href="booking.html">Schedule a Visit</a>
+          </div>
+        </div>
+
+        <div class="tile" data-reveal>
+          <h4>Business Hours</h4>
+          <p style="margin-top:6px;">
+            Mon–Sun: 10:00 AM – 9:00 PM<br/>
+            <span style="color:rgba(255,255,255,.7)">Flexible timings for events</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="tile" data-reveal style="margin-top:14px;">
+        <h4>Quick Enquiry</h4>
+        <p style="color:rgba(255,255,255,.7)">Submit will open WhatsApp with your message instantly.</p>
+
+        <form data-wa-form style="display:grid; gap:10px; max-width:820px; margin-top:10px;">
+          <input class="input" required name="name" placeholder="Your Name">
+          <input class="input" required name="mobile" placeholder="Phone Number">
+          <input class="input" name="type" placeholder="Event Type (Wedding / Reception / Birthday)">
+          <input class="input" name="date" placeholder="Event Date (optional)">
+          <input class="input" name="guests" placeholder="Guest Count (optional)">
+          <textarea class="textarea" rows="4" name="message" placeholder="Message (Theme / Requirements)"></textarea>
+
+          <button class="btn btn--gold" type="submit">Send on WhatsApp</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Grand Moment • Haryana • +91 8708808087</div></footer>
+
+  <div class="audioDock">
+    <button id="audioToggle">Play Sound</button>
+    <div class="hint" id="audioHint">Tap to enable (browser policy)</div>
+  </div>
+
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script src="js/app.js"></script>
+</body>
+</html>

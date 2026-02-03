@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Gallery — Grand Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <audio id="ambientAudio" src="assets/audio/serene-glass-landing.mp3" loop preload="auto"></audio>
+
+  <header class="nav">
+    <div class="container nav__row">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Logo"/><div><div class="t1">GRAND MOMENT</div><div class="t2">Luxury Experiences • Haryana</div></div></a>
+      <nav class="nav__links">
+        <a href="venues.html">Venues</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a><a href="booking.html">Book</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--wa" href="https://wa.me/918708808087" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn btn--gold" href="booking.html">Reserve a Date</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 data-reveal style="font-family:'Cinzel',serif;">Gallery</h2>
+      <p data-reveal style="color:rgba(255,255,255,.70); margin-top:6px;">
+        Premium moments captured with cinematic ambience — weddings, receptions, decor themes and more.
+      </p>
+
+      <div class="gallery" data-reveal style="margin-top:12px;">
+        <div class="gItem"><img src="assets/images/wedding-1.png" alt=""><div class="cap">Ceremony</div></div>
+        <div class="gItem"><img src="assets/images/wedding-2.png" alt=""><div class="cap">Outdoor Night</div></div>
+        <div class="gItem"><img src="assets/images/wedding-3.png" alt=""><div class="cap">Floral Entry</div></div>
+        <div class="gItem"><img src="assets/images/wedding-4.png" alt=""><div class="cap">Ballroom</div></div>
+
+        <div class="gItem"><img src="assets/images/wedding-1.png" alt=""><div class="cap">Stage</div></div>
+        <div class="gItem"><img src="assets/images/wedding-2.png" alt=""><div class="cap">Dining Setup</div></div>
+      </div>
+
+      <div class="tile" data-reveal style="margin-top:14px;">
+        <h4>Want your event to look like this?</h4>
+        <p>Message us your date + guests. We’ll suggest the best decor and plan.</p>
+        <a class="btn btn--wa" href="https://wa.me/918708808087?text=Hi%20Grand%20Moment%2C%20I%20saw%20your%20gallery.%20Please%20share%20packages%20for%20my%20event."
+           target="_blank" rel="noreferrer">Ask on WhatsApp</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Grand Moment — Haryana</div></footer>
+  <div class="audioDock"><button id="audioToggle">Play Sound</button><div class="hint" id="audioHint">Tap to enable (browser policy)</div></div>
+
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script src="js/app.js"></script>
+</body>
+</html>

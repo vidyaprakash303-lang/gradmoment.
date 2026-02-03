@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Grand Moment — Admin Panel</title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <div class="wrap">
+    <h1>Grand Moment Admin Panel</h1>
+    <p class="muted">Demo admin UI. For real “Save” on hosting, connect to Netlify CMS or a backend.</p>
+
+    <div class="card">
+      <label>Hero Headline</label>
+      <input id="headline" placeholder="Hero headline">
+
+      <label>Rotating Taglines (one per line)</label>
+      <textarea id="taglines" rows="6" placeholder="Tagline 1&#10;Tagline 2"></textarea>
+
+      <label>Phone Number</label>
+      <input id="phone" placeholder="+91 ...">
+
+      <div class="row">
+        <button class="btn" id="saveBtn">Save Changes</button>
+        <a class="btn ghost" href="../index.html">Open Website</a>
+      </div>
+
+      <div class="note" id="note"></div>
+    </div>
+  </div>
+
+  <script src="admin.js"></script>
+</body>
+</html>

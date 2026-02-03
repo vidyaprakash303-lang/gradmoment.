@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Venues — Grand Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <audio id="ambientAudio" src="assets/audio/serene-glass-landing.mp3" loop preload="auto"></audio>
+
+  <header class="nav">
+    <div class="container nav__row">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Logo"/><div><div class="t1">GRAND MOMENT</div><div class="t2">Luxury Experiences • Haryana</div></div></a>
+      <nav class="nav__links">
+        <a href="venues.html">Venues</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a><a href="booking.html">Book</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--wa" href="https://wa.me/918708808087" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn btn--gold" href="booking.html">Reserve a Date</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 data-reveal style="font-family:'Cinzel',serif;">Venues</h2>
+
+      <div class="grid3">
+        <div class="tile" data-reveal><h4>Royal Ballroom</h4><p>Chandelier lighting • premium stage • luxury seating layout.</p></div>
+        <div class="tile" data-reveal><h4>Garden Venue</h4><p>Fairy lights • open-air seating • mandap & entry concepts.</p></div>
+        <div class="tile" data-reveal><h4>VIP Lounge</h4><p>Family comfort space • premium hospitality • private moments.</p></div>
+      </div>
+
+      <div class="tile" data-reveal style="margin-top:14px;">
+        <h4 style="font-family:'Cinzel',serif;">Want a venue tour?</h4>
+        <p>Click below to message us directly on WhatsApp with your preferred date.</p>
+        <a class="btn btn--wa" href="https://wa.me/918708808087?text=Hi%20Grand%20Moment%2C%20I%20want%20a%20venue%20tour%20(Please%20share%20available%20dates)."
+           target="_blank" rel="noreferrer">WhatsApp for Tour</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Grand Moment — Haryana</div></footer>
+
+  <div class="audioDock"><button id="audioToggle">Play Sound</button><div class="hint" id="audioHint">Tap to enable (browser policy)</div></div>
+
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script src="js/app.js"></script>
+</body>
+</html>

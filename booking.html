@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Booking — Grand Moment</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Manrope:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css"/>
+</head>
+<body>
+  <audio id="ambientAudio" src="assets/audio/serene-glass-landing.mp3" loop preload="auto"></audio>
+
+  <header class="nav">
+    <div class="container nav__row">
+      <a class="brand" href="index.html"><img src="assets/images/logo.png" alt="Logo"/><div><div class="t1">GRAND MOMENT</div><div class="t2">Luxury Experiences • Haryana</div></div></a>
+      <nav class="nav__links">
+        <a href="venues.html">Venues</a><a href="services.html">Services</a><a href="gallery.html">Gallery</a>
+        <a href="pricing.html">Pricing</a><a href="booking.html">Book</a><a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav__cta">
+        <a class="btn btn--wa" href="https://wa.me/918708808087" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn btn--gold" href="booking.html">Reserve a Date</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h2 data-reveal style="font-family:'Cinzel',serif;">Book Your Date</h2>
+      <p data-reveal style="color:rgba(255,255,255,.70); margin-top:6px;">
+        Fill the form — it will open WhatsApp with your enquiry (instant premium booking flow).
+      </p>
+
+      <div class="tile" data-reveal style="max-width:820px;">
+        <form data-wa-form>
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px;">
+            <input class="input" name="name" required placeholder="Your Name">
+            <input class="input" name="mobile" required placeholder="Your Phone Number">
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px;">
+            <input class="input" name="type" required placeholder="Event Type (Wedding / Reception / Birthday)">
+            <input class="input" name="date" placeholder="Event Date (optional)">
+          </div>
+
+          <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:10px;">
+            <input class="input" name="guests" placeholder="Guest Count (approx)">
+            <input class="input" name="message" placeholder="Any special theme request? (optional)">
+          </div>
+
+          <div style="margin-top:12px; display:flex; gap:10px; flex-wrap:wrap;">
+            <button class="btn btn--gold" type="submit">Send Enquiry on WhatsApp</button>
+            <a class="btn" href="tel:+918708808087">Call Now</a>
+          </div>
+        </form>
+      </div>
+
+      <div class="grid3" style="margin-top:14px;">
+        <div class="tile" data-reveal><h4>Fast Response</h4><p>We reply quickly on WhatsApp for availability & packages.</p></div>
+        <div class="tile" data-reveal><h4>Custom Planning</h4><p>Decor + lighting + seating — planned to match your budget.</p></div>
+        <div class="tile" data-reveal><h4>Premium Experience</h4><p>Luxury ambience with a human touch — every detail matters.</p></div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© <span id="y"></span> Grand Moment — Haryana • +91 8708808087</div></footer>
+  <div class="audioDock"><button id="audioToggle">Play Sound</button><div class="hint" id="audioHint">Tap to enable (browser policy)</div></div>
+
+  <script>document.getElementById("y").textContent=new Date().getFullYear();</script>
+  <script src="js/app.js"></script>
+</body>
+</html>

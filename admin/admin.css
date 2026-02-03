@@ -1,0 +1,53 @@
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0b0c14;
+  color: rgba(255,255,255,.92);
+  margin:0; padding: 24px;
+}
+.wrap{ max-width: 900px; margin: 0 auto; }
+h1{ margin: 0 0 6px; }
+.muted{ color: rgba(255,255,255,.7); margin: 0 0 18px; }
+
+.card{
+  border: 1px solid rgba(255,255,255,.14);
+  border-radius: 18px;
+  background: rgba(255,255,255,.06);
+  padding: 18px;
+}
+label{ display:block; margin-top: 12px; font-weight: 700; }
+input, textarea{
+  width: 100%;
+  margin-top: 8px;
+  padding: 12px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.14);
+  background: rgba(0,0,0,.25);
+  color: white;
+  outline: none;
+}
+input:focus, textarea:focus{
+  border-color: rgba(217,181,108,.55);
+  box-shadow: 0 0 0 4px rgba(217,181,108,.10);
+}
+.row{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px; }
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding: 10px 14px;
+  border-radius: 999px;
+  border: 1px solid rgba(217,181,108,.55);
+  background: rgba(217,181,108,.12);
+  color: rgba(255,255,255,.95);
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn.ghost{
+  border-color: rgba(255,255,255,.16);
+  background: rgba(255,255,255,.06);
+}
+.note{
+  margin-top: 12px;
+  color: rgba(255,255,255,.75);
+  font-size: 13px;
+}
